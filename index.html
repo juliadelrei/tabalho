@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +24,9 @@
             >
 
             <div class="JHFinformacoes">
-
-                <p class="JHFinstrucao">
-                    Adivinhe a palavra secreta de 5 letras.
-                </p>
+                  <p class="JHFtextoTentativas">
+                        TENTATIVAS:
+                    </p>
 
                 <div class="JHFcontador">
 
@@ -36,13 +34,12 @@
                         <span class="JHFtentativaAtual">1</span>
                         <span class="JHFtentativaTotal">/6</span>
                     </p>
-
-                    <p class="JHFtextoTentativas">
-                        TENTATIVAS
-                    </p>
+            
 
                 </div>
-
+                       <p class="JHFinstrucao">
+                    Adivinhe a palavra secreta de 5 letras.
+                </p>
             </div>
 
         </div>
@@ -54,7 +51,6 @@
 
         <section class="JHFjogo">
 
-            <!-- CAMPO PARA DIGITAR A PALAVRA -->
             <input
                 class="JHFcampoPalavra"
                 type="text"
@@ -62,7 +58,7 @@
                 placeholder="Acerte a senha"
             >
 
-            <!-- BOTÃO DE ENVIAR -->
+
             <button class="JHFbotaoEnviar">
                 ENVIAR
             </button>
@@ -70,7 +66,7 @@
             <p class="JHFmensagem"></p>
 
 
-            <!-- TABULEIRO -->
+        
             <div class="JHFtabuleiro">
 
                 <div class="JHFlinha">
@@ -148,16 +144,15 @@
     <section class="JHFtelaResultado JHFescondido">
 
         <div class="JHFconteudoResultado">
-
+               <h1 class="JHFtituloResultado">
+                Vitória
+            </h1>
             <img
                 class="JHFamongResultado"
                 src="./assets/among-15.png"
                 alt=""
             >
 
-            <h1 class="JHFtituloResultado">
-                Vitória
-            </h1>
 
         </div>
 

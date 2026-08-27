@@ -2,13 +2,7 @@ let JHFpalavrasSecretas = [
     "POREM",
     "CASAS",
     "ASSIM",
-    "PEDRA",
-    "MUNDO",
-    "NOITE",
-    "SONHO",
-    "VERDE",
-    "CAMPO",
-    "TIGRE"
+  
 ];
 
 let JHFpalavraSecreta = "";
