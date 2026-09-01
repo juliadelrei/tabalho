@@ -8,12 +8,14 @@
 
 .JHFcorpo {
     background-color: #0A1B2D;
-    color: white;   
+    color: white;
 }
+
 .JHFpalavrasSecretas {
     display: none;
     font-family: arial;
 }
+
 .JHFcabecalho {
     width: 100%;
     height: 145px;
@@ -98,20 +100,20 @@
 .JHFbotaoReiniciar:hover {
     background-image: url("./assets/return-hover.png");
 }
+
 .JHFprincipal {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #0A1B2D;
-    padding-top: 12px;
-    height: 588px;
+    padding-top: 14px;
+    height: 595px;
     width: 100%;
-    weight: 100%;
 }
 
 .JHFjogo {
-    width: 380px;
-    padding: 9px 10px 12px;
+    width: 350px;
+    padding: 10px;
     border: 3px solid #03101C;
     border-radius: 7px;
     display: flex;
@@ -140,7 +142,7 @@
 }
 
 .JHFbotaoEnviar {
-    width: 355px;
+    width: 327px;
     height: 27px;
     margin-top: 5px;
     background-color: #2B4056;
@@ -162,36 +164,32 @@
     font-size: 10px;
     text-align: center;
 }
+
 .JHFtabuleiro {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 380px;
-    height: auto;
+    height: 360px;
     margin-top: 8px;
-    padding: 5px;
-    border: 3px solid #03101C;
     border-radius: 5px;
-    background-color: #06111F;
     text-align: center;
 }
-
 
 .JHFlinha {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     width: 340px;
     height: 60px;
     text-align: center;
+    margin: 5px auto;
 }
 
 .JHFquadrado {
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     background-color: #000612;
     border: 3px solid #2B4056;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,7 +277,7 @@
     position: absolute;
     right: 12px;
     top: 12px;
-    border: none;   
+    border: none;
 }
 
 .JHFbotaoFechar:hover {
@@ -290,101 +288,345 @@
     display: none;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 600px) {
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
 
-.JHFcabecalho {
-    height: 130px;
+    .JHFcorpo {
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .JHFcabecalho {
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .JHFareaTopo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 0 42px 0 8px;
+    }
+
+    .JHFamongTopo {
+        width: 78px;
+        height: 100px;
+        object-fit: contain;
+        margin: 0;
+        align-self: center;
+    }
+
+    .JHFinformacoes {
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .JHFcontador {
+        width: 110px;
+        padding: 5px 8px;
+        border: 2px solid #05111E;
+        border-radius: 7px;
+    }
+
+    .JHFtextoTentativas {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .JHFnumeroTentativas {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .JHFinstrucao {
+        width: 170px;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+    }
+
+    .JHFbotaoReiniciar {
+        width: 32px;
+        height: 32px;
+        top: 7px;
+        right: 7px;
+    }
+
+    .JHFprincipal {
+        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 125px);
+        padding: 12px 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-x: hidden;
+    }
+
+    .JHFjogo {
+        width: calc(100% - 24px);
+        max-width: 340px;
+        padding: 10px;
+        border: 2px solid #03101C;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .JHFcampoPalavra {
+        width: 100%;
+        height: 38px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .JHFbotaoEnviar {
+        width: 100%;
+        height: 34px;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .JHFmensagem {
+        width: 100%;
+        height: 16px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    .JHFtabuleiro {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .JHFlinha {
+        width: 100%;
+        height: auto;
+        margin: 4px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .JHFquadrado {
+        width: 52px;
+        height: 52px;
+        flex: 0 0 52px;
+        border: 2px solid #2B4056;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .JHFtituloResultado {
+        width: 100%;
+        margin-top: 80px;
+        padding: 0 15px;
+        font-size: 42px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .JHFamongResultado {
+        width: 115px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .JHFbotaoFechar {
+        width: 32px;
+        height: 32px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .JHFtelaResultado {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
-.JHFprincipal {
-    height: 100%;
-    padding-top: 14px;
+@media screen and (max-width: 360px) {
+    .JHFcabecalho {
+        height: 115px;
+    }
+
+    .JHFareaTopo {
+        gap: 5px;
+        padding-right: 38px;
+    }
+
+    .JHFamongTopo {
+        width: 68px;
+        height: 90px;
+    }
+
+    .JHFinformacoes {
+        width: 160px;
+    }
+
+    .JHFcontador {
+        width: 100px;
+        padding: 4px 6px;
+    }
+
+    .JHFtextoTentativas {
+        font-size: 9px;
+    }
+
+    .JHFnumeroTentativas {
+        font-size: 21px;
+    }
+
+    .JHFinstrucao {
+        width: 160px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .JHFprincipal {
+        min-height: calc(100vh - 115px);
+        padding-top: 10px;
+    }
+
+    .JHFjogo {
+        width: calc(100% - 16px);
+        max-width: 335px;
+        padding: 8px;
+    }
+
+    .JHFcampoPalavra {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .JHFbotaoEnviar {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .JHFmensagem {
+        font-size: 9px;
+    }
+
+    .JHFtabuleiro {
+        margin-top: 8px;
+    }
+
+    .JHFlinha {
+        gap: 4px;
+        margin: 3px 0;
+    }
+
+    .JHFquadrado {
+        width: 49px;
+        height: 49px;
+        flex-basis: 49px;
+        font-size: 16px;
+    }
+
+    .JHFtituloResultado {
+        margin-top: 70px;
+        font-size: 36px;
+    }
+
+    .JHFamongResultado {
+        width: 100px;
+    }
 }
 
-.JHFareaTopo {
-    gap: 6px;
+@media screen and (max-width: 320px) {
+    .JHFcabecalho {
+        height: 105px;
+    }
+
+    .JHFareaTopo {
+        gap: 3px;
+        padding-right: 34px;
+    }
+
+    .JHFamongTopo {
+        width: 58px;
+        height: 80px;
+    }
+
+    .JHFinformacoes {
+        width: 145px;
+    }
+
+    .JHFcontador {
+        width: 92px;
+    }
+
+    .JHFtextoTentativas {
+        font-size: 8px;
+    }
+
+    .JHFnumeroTentativas {
+        font-size: 19px;
+    }
+
+    .JHFinstrucao {
+        width: 145px;
+        font-size: 8px;
+    }
+
+    .JHFprincipal {
+        min-height: calc(100vh - 105px);
+        padding-top: 8px;
+    }
+
+    .JHFjogo {
+        width: calc(100% - 12px);
+        padding: 7px;
+    }
+
+    .JHFcampoPalavra {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .JHFbotaoEnviar {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .JHFlinha {
+        gap: 3px;
+        margin: 3px 0;
+    }
+
+    .JHFquadrado {
+        width: 45px;
+        height: 45px;
+        flex-basis: 45px;
+        font-size: 15px;
+    }
 }
 
-.JHFamongTopo {
-    width: 89px;
-    height: 120px;
-    margin-bottom: 9px;
-}
-
-.JHFcontador {
-    min-width: 115px;
-    padding: 6px 12px;
-}
-
-.JHFtextoTentativas {
-    font-size: 11px;
-}
-
-.JHFnumeroTentativas {
-    font-size: 24px;
-}
-
-.JHFinstrucao {
-    font-size: 9px;
-    max-width: 180px;
-    text-align: center;
-}
-
-.JHFbotaoReiniciar {
-    width: 31px;
-    height: 31px;
-    top: 7px;
-    right: 7px;
-}
-
-.JHFjogo {
-    width: 270px;
-    padding: 8px 9px 12px;
-}
-
-.JHFcampoPalavra {
-    height: 28px;
-    font-size: 12px;
-}
-
-.JHFbotaoEnviar {
-    height: 22px;
-    font-size: 10px;
-}
-
-.JHFlinha {
-    gap: 4px;
-}
-
-.JHFquadrado {
-    width: 35px;
-    height: 35px;
-    font-size: 17px;
-}
-
-.JHFtituloResultado {
-    margin-top: 115px;
-    font-size: 46px;
-}
-
-.JHFamongResultado {
-    width: 120px;
-    margin-top: 18px;
-}
-
-.JHFbotaoFechar {
-    width: 31px;
-    height: 31px;
-    right: 8px;
-    top: 8px;
-}
-
-.JHFtelaResultado {
-    background-position: center;
-    background-size: cover;
-}
-
-}
-P{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+P {
+    font-family: arial;
 }
