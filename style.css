@@ -168,7 +168,7 @@
 .JHFtabuleiro {
     display: flex;
     flex-direction: column;
-    height: 360px;
+    height: 380px;
     margin-top: 8px;
     border-radius: 5px;
     text-align: center;
